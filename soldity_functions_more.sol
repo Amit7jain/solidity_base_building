@@ -23,7 +23,15 @@ contract test_function2{
     }
 
 }
-// FALLBACK function example :     
+// FALLBACK function example :    
+/*
+A contract can have at most one fallback function, declared using either fallback () external [payable] or
+fallback (bytes calldata input) external [payable] returns (bytes memory output) (both without the function keyword). This function must have external visibility. A fallback function can be virtual, can
+override and can have modifiers.
+The fallback function is executed on a call to the contract if none of the other functions match the given function
+signature, or if no data was supplied at all and there is no receive Ether function. The fallback function always receives
+data, but in order to also receive Ether it must be marked payable.
+*/ 
 
 contract Test {
    uint public x ;
